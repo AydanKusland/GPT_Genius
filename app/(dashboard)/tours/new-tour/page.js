@@ -1,16 +1,16 @@
-import Chat from '@/components/Chat'
+import NewTour from '@/components/NewTour'
 import {
 	HydrationBoundary,
 	QueryClient,
 	dehydrate
 } from '@tanstack/react-query'
 
-const ChatPage = () => {
+const NewTourPage = () => {
 	const queryClient = new QueryClient()
 	return (
 		<HydrationBoundary state={dehydrate(queryClient)}>
-			<Chat />
+			<NewTour />
 		</HydrationBoundary>
 	)
 }
-export default ChatPage
+export default NewTourPage
